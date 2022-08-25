@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
+body {
+margin: 0;
+font-family: 'IM Fell Great Primer SC', serif;
+height: 100%;
+width: 100%;
+}
+header {
+    width: 100%;
+    height: 3.75em;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #363062;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.beranda{
+    height: 52.5em;
+    width: 100%;
+    background: url("../assets/bg-beranda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.p-beranda{
+    margin: 0;
+    font-weight: 400;
+    font-size: 3.75em;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #E9D5DA;
+}
+.p2-beranda{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.375em;
+    text-align: center;
+    color: #E9D5DA;
+}
+.catalog {
+    width: 100%;
+    height: 27em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-header {
+    margin-top: 2em;
+    color: #E9D5DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    background: #363062;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 30px 30px;
+}
+.catalog-content {
+    width: 92%;
+    height: 24em;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    z-index: -1;
+    border-radius: 0px 0px 15px 15px;
+    display: grid;
+    place-items: center;
+}
+.catalog-container {
+    width: 87%;
+    height: 18em;
+    display:grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-template-rows: 46% 46%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.item {
+    display: inline-block;
+}
+.frame {
+    width: 100%;
+    height: 75%;
+    background-color: #363062;
+}
+.gambar{
+    width: 95%;
+    height: 95%;
+    
+}
+.text {
+    width: 100%;
+    height: 25%;
+    font-size: 0.75em;
+    color: #363062;
+    text-align: center;
+}
+
+footer{
+    margin-top: 1em;
+    width: 100%;
+    height: 7.8em;
+    background-color: #E9D5DA;
+}
+.row-1{
+    font-weight: 400;
+    padding-top: 0.625em;
+    margin-bottom: 0.625em;
+    text-align: center;
+}
+.p-footer{
+    font-size: 1.75em;
+    color: #363062;
+    margin: 0;
+}
+.copyrigth{
+    font-size: 0.375em;
+    color: #454545;
+    margin: 0;
+}
+.row-2{
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    text-align: left;
+    margin: 0.625em;
+}
+.alamat{
+    margin: 0;
+    color: #454545;
+    font-size: 0.625em;
+    flex-basis: 65%;
+}
+.sosmed{
+    flex-basis: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 30em) {
+    
+    .container {
+        width: 90%;
+    }
+    
+    .beranda {
+        max-width: 30em;
+        background-size: cover;
+        background-position: -10em;
+    }
+    .catalog-content {
+        width: 85%;
+    }
+    .gambar{
+        width: 95%;
+        height: 95%;
+    }
+}
